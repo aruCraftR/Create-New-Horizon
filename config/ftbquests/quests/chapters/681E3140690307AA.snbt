@@ -26,6 +26,7 @@
 			description: [
 				"    在本整合包中，添加了冷汗模组，温度会随着&a群系、季节、维度、周围的方块&r变化而变化。&4过高和过低的温度都会导致危险&r，所以请时刻注意自身的温度情况，别忘了制作温度计哦。更多信息请前往“冷汗”章节。"
 				"    别怪我没提醒你，冬天会很冷的。"
+				"    前期可泡水降温或在岩浆附近取暖。"
 			]
 			icon: "cold_sweat:thermometer"
 			id: "5C2320A3B3E10E11"
@@ -105,7 +106,6 @@
 		}
 		{
 			dependencies: ["44C7FE559ECFB2EB"]
-			description: ["如果你想要GT连锁，你可以在目录找到config，并修改ctnhcore文件，将true改成false就可以进行格雷矿物的连锁了"]
 			id: "4B11E32ACA7BC6FA"
 			subtitle: "慢慢地探索吧"
 			tasks: [{
@@ -509,33 +509,153 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["09C344717F4BAD6C"]
-			description: ["许多物品的配方可能与原版发生了一些变动，请大家在游玩时注意多查看jei。同时，对于科技包的新手，每一个任务的描述都是十分重要的，可以&a帮助你更快理解游戏的基本玩法和流程&r，也请大家多多关注！"]
-			id: "1FB23D66088398BC"
+			icon: "minecraft:command_block"
+			id: "3414386DB1A5F8B7"
+			rewards: [{
+				command: "/rtp"
+				id: "71EA572BB4D4FBEE"
+				title: "随机传送"
+				type: "command"
+			}]
+			subtitle: "使用/rtp在预加载范围内随机传送，冷却30秒后可再次传送"
 			tasks: [{
-				id: "519EA59FDB4B479F"
-				title: "多查看JEI"
+				id: "628965704F14A3BA"
+				title: "常用指令"
 				type: "checkmark"
 			}]
-			x: -4.0d
-			y: 2.5d
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			icon: "javd:portal_block"
+			id: "2DF29C6CB52DE5AD"
+			rewards: [{
+				id: "48C7A4BC0A1A88FB"
+				item: "javd:portal_block"
+				type: "item"
+			}]
+			subtitle: "可前往虚空维度发展"
+			tasks: [{
+				id: "2777FEF60C56E5FB"
+				title: "领取虚空维度传送门"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:repeating_command_block"
+			id: "3889C9FF1C3CDFF9"
+			subtitle: "使用/sethome设置家 可设置至多个三家"
+			tasks: [{
+				id: "1CE219D7FE8E3B34"
+				title: "常用指令"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			icon: "minecraft:chain_command_block"
+			id: "3C83EE15DC097AB1"
+			subtitle: "使用/back指令回到死亡点或上个传送点"
+			tasks: [{
+				id: "1452E9BE8130B464"
+				title: "常用指令"
+				type: "checkmark"
+			}]
+			x: -11.5d
+			y: 1.5d
 		}
 		{
 			description: [
-				"    如你所见，目前整合包的内容&c还有相当多不完整的地方&r，目前的开发组主力只有两位在校大学生，平时时间也不会太多，而且大量的时间花在新机制、新多方块、新产线的设计上，这也导致&c整合包的任务、美工、建筑等方面的不足&r。"
-				"    如果你有一定的美术天赋，或者对哪些物品的材质有想法或者不满意，可以加群或者联系作者提供你的作品。如果你对整合包流程十分熟悉，觉得作者现在写的任务不合理，也可以使用github提供你的修改（&a任务的编辑是可视化的界面，简单易上手，相信你一定能够做好&r）。"
-				"    最后，哪怕你啥也不会，但是有很多新奇的点子，也随时欢迎你加群和大家交流或者提供给作者，每个人的创意都是独一无二的，相信你的创意也可以得到大家的支持。如果你对这些都没有兴趣，那么，请尽情享受本整合包吧！"
+				"本服添加了以下额外模组："
+				"窗帘（/player召假人挂机）、简单存储、tom的简易存储、精妙存储、建筑手杖 、tacz、车万女仆、驯养革新、神话：现代化诸神黄昏、是史蒂夫模型(可关闭)、高级透视、灵魂出窍、Vivecraft"
+				"经验机制改革"
+				"机械动力：附魔工业"
+				"Applied-Botanics-forge"
+				"[tacz]深岩银河枪包"
+				"[tacz]Create Armorer"
+				"[tacz]Applied Armorer"
+				"[tacz]Blue Archive super gun pack"
 			]
-			id: "5F126DE1A7F425DA"
-			shape: "gear"
-			size: 1.5d
+			icon: "toms_storage:ts.wireless_terminal"
+			id: "504AF59A6B533318"
 			tasks: [{
-				id: "686C86F01CDB3AD7"
-				title: "欢迎加入共创计划！"
+				id: "4F384664839597AC"
+				title: "额外模组"
 				type: "checkmark"
 			}]
-			x: -9.0d
-			y: 6.0d
+			x: -11.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"配置文件变更："
+				"大幅降低冷汗难度"
+				"禁用了暴风雪和沙尘暴"
+				"添加部分肉类合成油脂配方"
+				"添加搅拌机分解小挫燧石粉配方(原配方存在bug)"
+				"添加lv电路板合成虚空框架配方(原配方存在bug)"
+				"修复工作台合成光伏脉冲方块配方"
+				"修复原版铁锹配方"
+				"添加旧版钻石磁铁配方"
+				"添加部分任务和奖励"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:invar_wrench"
+				tag: {
+					DisallowContainerItem: 0b
+					Enchantments: [{
+						id: "minecraft:efficiency"
+						lvl: 1s
+					}]
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 383
+						ToolSpeed: 8.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "6829EC4691BD5443"
+			tasks: [{
+				id: "5AFCEAE6871E4228"
+				title: "配置文件变更"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			description: ["虚空蓄电池会导致严重的带宽占用问题 已删除配方"]
+			icon: "createutilities:void_battery"
+			id: "696C932B79274F95"
+			rewards: [{
+				id: "5195F29E75260796"
+				item: {
+					Count: 1
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Flight: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "53297D53A53D7C3F"
+				title: "恶性bug警告"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 5.0d
 		}
 	]
 	title: "原始人，起洞！！"
