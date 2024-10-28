@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"main.animation": {
+			"loop": true
+		},
+		"head:default": {
+			"loop": true,
+			"bones": {
+				"Pilot_Headpiece": {
+					"scale": [1, 1, 1]
+				},
+				"hair": {
+					"scale": [0, 0, 0]
+				}
+			}
+		},
+		"pre_parallel0": {
+			"loop": true,
+			"bones": {
+				"Pilot_Headpiece": {
+					"scale": [0, 0, 0]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

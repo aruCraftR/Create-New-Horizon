@@ -1,0 +1,65 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 176,
+				"texture_height": 176,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "RightArm",
+					"pivot": [-3.4, 28.025, 0],
+					"cubes": [
+						{"origin": [-3.625, 22.075, -1.725], "size": [3.25, 4, 3.5], "uv": [12, 92]},
+						{"origin": [-3.375, 21.9, -1.475], "size": [3, 7.3, 3], "uv": [12, 71]},
+						{"origin": [-3.075, 21.125, -1.125], "size": [2.7, 2.05, 2.3], "uv": [42, 131]}
+					]
+				},
+				{
+					"name": "RightForeArm",
+					"parent": "RightArm",
+					"pivot": [-4.125, 22.075, 0.025],
+					"cubes": [
+						{"origin": [-3.375, 15.075, -1.475], "size": [3, 7, 3], "uv": [0, 71]},
+						{"origin": [-4.125, 19.075, -1.975], "size": [3.75, 3, 4], "uv": [0, 81]},
+						{"origin": [-4.625, 18.075, -2.225], "size": [4.25, 1, 4.5], "uv": [48, 71]}
+					]
+				},
+				{
+					"name": "RightHandLocator",
+					"parent": "RightForeArm",
+					"pivot": [-4.125, 16.575, 0.025]
+				},
+				{
+					"name": "LeftArm",
+					"pivot": [3.4, 28.025, 0],
+					"cubes": [
+						{"origin": [0.375, 21.9, -1.7], "size": [3, 7.3, 3], "uv": [36, 71]},
+						{"origin": [0.375, 21.9, -1.95], "size": [3.25, 4, 3.5], "uv": [0, 92]},
+						{"origin": [0.675, 21.125, -1.125], "size": [2.7, 2.05, 2.3], "uv": [42, 135]}
+					]
+				},
+				{
+					"name": "LeftForeArm",
+					"parent": "LeftArm",
+					"pivot": [4.125, 22.075, 0.025],
+					"cubes": [
+						{"origin": [0.375, 15.075, -1.7], "size": [3, 7, 3], "uv": [24, 71]},
+						{"origin": [0.125, 19.075, -2.2], "size": [3.75, 3, 4], "uv": [64, 71]},
+						{"origin": [-0.125, 18.075, -2.45], "size": [4.25, 1, 4.5], "uv": [48, 76]}
+					]
+				},
+				{
+					"name": "LeftHandLocator",
+					"parent": "LeftForeArm",
+					"pivot": [4.125, 16.575, 0.025]
+				}
+			]
+		}
+	]
+}
