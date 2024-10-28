@@ -1,0 +1,5 @@
+#Entity types that armor squash will not take effect on
+armor_squash_blacklist = ["minecraft:player", "minecraft:armor_stand", "dummmmmmy:target_dummy"]
+#If true, bolt action shotgun is bolt action, otherwise is shotgun
+ba_shotgun_is_ba = false
+

@@ -1,5 +1,16 @@
 {
   "attributes": {
+    "gunsmithlib:bullet_damage": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
     "forge:step_height_addition": {
       "enabled": false,
       "min": {
@@ -165,6 +176,17 @@
         "value": 1024
       }
     },
+    "gunsmithlib:horz_recoil": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
     "forge:entity_reach": {
       "enabled": false,
       "min": {
@@ -174,6 +196,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "tacz:tacz.bullet_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "ars_nouveau:ars_nouveau.perk.saturation": {
@@ -394,6 +427,28 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "gunsmithlib:bullet_speed": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
+    "gunsmithlib:vert_recoil": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "minecraft:generic.attack_speed": {
