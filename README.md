@@ -15,6 +15,7 @@
 | Sophisticated Storage | - | [精妙存储](https://www.mcmod.cn/class/6711.html) |
 | Tom's Simple Storage | - | [汤姆的简易存储](https://www.mcmod.cn/class/2882.html) |
 | Domestication Innovation | 斗蛐蛐 | [驯养革新](https://www.mcmod.cn/class/5827.html) |
+| Create Enchantment Industry | - | [机械动力：附魔工业](https://www.mcmod.cn/class/7892.html) |
 
 
 ### KubeJS：
