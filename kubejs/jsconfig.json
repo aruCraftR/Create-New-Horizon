@@ -14,7 +14,7 @@
             "probe/user",
             "server_scripts",
             "startup_scripts",
-            "client_scripts"
+            "client_scripts",
         ]
     }
 }

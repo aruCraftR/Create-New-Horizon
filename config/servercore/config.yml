@@ -139,7 +139,7 @@ commands:
   # Enables the /servercore status command.
   status-enabled: true
   # Enables the /mobcaps command.
-  mobcaps-enabled: true
+  mobcaps-enabled: false
   colors:
     # The colors used in command feedback. You can use hex codes or minecraft legacy color names.
     # The primary color is the most used color in command feedback.
