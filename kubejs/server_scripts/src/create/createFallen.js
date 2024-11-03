@@ -21,6 +21,7 @@
 //
 //移除制造卷簧机、压缩机、振动台、离心机、冲压机、杠杆锤、激光加工机、切片机的原配方
 ServerEvents.recipes(event => {
+  event.replaceInput({},'vintageimprovements:iron_spring','gtceu:iron_spring')
     remove_recipes_id(event, [
     "vintageimprovements:craft/centrifuge",
     "vintageimprovements:craft/spring_coiling_machine",
@@ -128,7 +129,7 @@ ServerEvents.recipes(event => {
 //激光加工机需要钢铁构件合成修改
     event.shaped('vintageimprovements:laser',[
         ['create:cogwheel','minecraft:redstone_block','create:cogwheel'],
-        ['kubejs:steel_mechanism','create:brass_casing','vintageimprovements:iron_spring'],
+        ['kubejs:steel_mechanism','create:brass_casing','gtceu:iron_spring'],
         ['minecraft:quartz','vintageimprovements:laser_item','minecraft:quartz']
     ]);
 //切片机需要钢铁构件合成修改
@@ -148,7 +149,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:steel_mechanism',
         D: 'create:andesite_casing',
         E: 'create:shaft',
-        F: 'vintageimprovements:iron_spring',
+        F: 'gtceu:iron_spring',
     })
 
 //去除覆膜印刷&酚醛树脂印刷电路基板配方
@@ -305,7 +306,7 @@ ServerEvents.recipes(event => {
         'gtceu:resin_printed_circuit_board'
         ], 'gtceu:wood_plate', [
     event.recipes.createDeploying(transitional, [transitional, 'gtceu:copper_foil']),
-    event.recipes.vintageimprovementsLaserCutting(transitional, transitional),
+    event.recipes.vintageimprovementsLaserCutting(transitional, transitional).energyCost(10000).maxChargeRate(5000),
     event.recipes.createFilling(transitional, [transitional, Fluid.of('gtceu:glue', 25)]),
     event.recipes.createPressing(transitional, [transitional]),
         ]).transitionalItem(transitional)
